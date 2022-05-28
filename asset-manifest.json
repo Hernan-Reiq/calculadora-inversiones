@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/calculadora-inversiones/static/css/main.11183ef4.css",
-    "main.js": "/calculadora-inversiones/static/js/main.22dba957.js",
+    "main.js": "/calculadora-inversiones/static/js/main.f7f3ec14.js",
     "static/js/787.28cb0dcd.chunk.js": "/calculadora-inversiones/static/js/787.28cb0dcd.chunk.js",
     "index.html": "/calculadora-inversiones/index.html",
     "main.11183ef4.css.map": "/calculadora-inversiones/static/css/main.11183ef4.css.map",
-    "main.22dba957.js.map": "/calculadora-inversiones/static/js/main.22dba957.js.map",
+    "main.f7f3ec14.js.map": "/calculadora-inversiones/static/js/main.f7f3ec14.js.map",
     "787.28cb0dcd.chunk.js.map": "/calculadora-inversiones/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.11183ef4.css",
-    "static/js/main.22dba957.js"
+    "static/js/main.f7f3ec14.js"
   ]
 }
