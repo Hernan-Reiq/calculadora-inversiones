@@ -57,11 +57,11 @@ function Index() {
                             <button className="btn btn-success w-100" onClick={() => {
                                 if (inversion.current.value && interes.current.value && meses.current.value && cantidad.current.value && reinversion.current.value) {
                                     setResultados(Calculadora(
-                                        parseInt(inversion.current.value),
-                                        parseInt(interes.current.value),
-                                        parseInt(meses.current.value),
-                                        parseInt(cantidad.current.value),
-                                        parseInt(reinversion.current.value),
+                                        parseFloat(inversion.current.value),
+                                        parseFloat(interes.current.value),
+                                        parseFloat(meses.current.value),
+                                        parseFloat(cantidad.current.value),
+                                        parseFloat(reinversion.current.value),
                                         capitalizable
                                     ));
                                 } else {
