@@ -80,7 +80,8 @@ function Index() {
                         <thead>
                             <tr>
                                 <th scope="col">Mes</th>
-                                <th scope="col">Intereses</th>
+                                <th scope="col">Intereses generados</th>
+                                <th scope="col">Intereses recibidos (90%)</th>
                                 <th scope="col">Capital</th>
                             </tr>
                         </thead>
@@ -90,7 +91,8 @@ function Index() {
                                     return (
                                         <tr key={i}>
                                             <th scope="row" className={(i % 2) === 0 ? 'bg-secondary' : 'bg-dark'}>{element.mes}</th>
-                                            <td className={(i % 2) === 0 ? 'bg-secondary' : 'bg-dark'}>{element.intereses}</td>
+                                            <td className={(i % 2) === 0 ? 'bg-secondary' : 'bg-dark'}>{element.interesesGenerado}</td>
+                                            <td className={(i % 2) === 0 ? 'bg-secondary' : 'bg-dark'}>{element.interesesRecibido}</td>
                                             <td className={(i % 2) === 0 ? 'bg-secondary' : 'bg-dark'}>{element.capital}</td>
                                         </tr>
                                     )

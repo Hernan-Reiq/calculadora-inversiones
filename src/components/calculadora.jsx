@@ -14,13 +14,14 @@ function Calculadora(inversion, interes, meses, cantidad, reinversion, capitaliz
         var calcularInteresGanadoEsteMes = resultado * interesMensual; //Ganancias obtenidas este mes
 
         if (capitalizable) {
-            resultado = resultado + calcularInteresGanadoEsteMes;
+            resultado = resultado + (calcularInteresGanadoEsteMes * 0.9);
         }
 
         arrayResults.push({
             mes: i + 1,
             capital: FormatNumber(resultado),
-            intereses: FormatNumber(calcularInteresGanadoEsteMes)
+            interesesGenerado: FormatNumber(calcularInteresGanadoEsteMes),
+            interesesRecibido: FormatNumber(calcularInteresGanadoEsteMes * 0.9)
         })
     }
     return arrayResults;
