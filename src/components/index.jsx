@@ -80,13 +80,14 @@ function Index() {
                         <table className="table table-dark m-0" onClick={() => console.log(resultados)}>
                             <thead>
                                 <tr>
-                                    <th colSpan={3} className="h4 text-center">
+                                    <th colSpan={4} className="h4 text-center">
                                         Resumen
                                     </th>
                                 </tr>
                                 <tr>
                                     <th scope="col">Intereses Generados</th>
                                     <th scope="col">Intereses Recibidos (90%)</th>
+                                    <th scope="col">Capital Invertido</th>
                                     <th scope="col">Capital Final</th>
                                 </tr>
                             </thead>
@@ -95,6 +96,7 @@ function Index() {
                                     <tr>
                                         <td className={`bg-secondary`}>{resultados[resultados.length - 1]['acuInteresGenerado']}</td>
                                         <td className={`bg-secondary`}>{resultados[resultados.length - 1]['acuInteresRecibido']}</td>
+                                        <td className={`bg-secondary`}>{resultados[resultados.length - 1]['acuTotalInvertido']}</td>
                                         <td className={`bg-secondary`}>{resultados[resultados.length - 1]['acuCapital']}</td>
                                     </tr>
                                 }

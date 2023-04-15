@@ -6,6 +6,7 @@ function Calculadora(inversion, interes, meses, cantidad, reinversion, capitaliz
     var acuCapital = 0;
     var acuInteresGenerado = 0;
     var acuInteresRecibido = 0;
+    var acuTotalInvertido = inversion;
 
     for (var i = 0; i < meses; i++) {
         if (i === 0) {//En el primer mes se define la inversion
@@ -14,6 +15,7 @@ function Calculadora(inversion, interes, meses, cantidad, reinversion, capitaliz
 
         if ((i % (cantidad)) === 0 && i > 0) {//Determinar si hay que hacer reinversion
             resultado += reinversion;
+            acuTotalInvertido += reinversion;
         }
 
         var calcularInteresGanadoEsteMes = resultado * interesMensual; //Ganancias obtenidas este mes
@@ -35,7 +37,8 @@ function Calculadora(inversion, interes, meses, cantidad, reinversion, capitaliz
             interesesRecibido: FormatNumber(calcularInteresGanadoEsteMes * 0.9),
             acuInteresGenerado: FormatNumber(acuInteresGenerado),
             acuInteresRecibido: FormatNumber(acuInteresRecibido),
-            acuCapital: FormatNumber(acuCapital)
+            acuCapital: FormatNumber(acuCapital),
+            acuTotalInvertido: FormatNumber(acuTotalInvertido)
         })
     }
     return arrayResults;
